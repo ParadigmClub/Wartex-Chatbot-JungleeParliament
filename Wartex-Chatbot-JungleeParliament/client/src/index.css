@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow {
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  border-radius: 100%;
+}
+
+.glow-1 {
+  animation: glow1 4s linear infinite;
+}
+
+.glow-2 {
+  animation: glow2 4s linear infinite;
+  animation-delay: 100ms;
+}
+
+.glow-3 {
+  animation: glow3 4s linear infinite;
+  animation-delay: 200ms;
+}
+
+.glow-4 {
+  animation: glow4 4s linear infinite;
+  animation-delay: 300ms;
+}
+
+.glow-5 {
+  animation: glow5 4s linear infinite;
+  animation-delay: 300ms;
+}
+
+@keyframes glow1 {
+  0% {
+    transform: translate(10%, 10%) scale(1);
+  }
+  25% {
+    transform: translate(-10%, 10%) scale(1);
+  }
+  50% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+  75% {
+    transform: translate(10%, -10%) scale(1);
+  }
+  100% {
+    transform: translate(10%, 10%) scale(1);
+  }
+}
+
+@keyframes glow2 {
+  0% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+  25% {
+    transform: translate(10%, -10%) scale(1);
+  }
+  50% {
+    transform: translate(10%, 10%) scale(1);
+  }
+  75% {
+    transform: translate(-10%, 10%) scale(1);
+  }
+  100% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+}
+
+@keyframes glow3 {
+  0% {
+    transform: translate(-10%, 10%) scale(1);
+  }
+  25% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+  50% {
+    transform: translate(10%, -10%) scale(1);
+  }
+  75% {
+    transform: translate(10%, 10%) scale(1);
+  }
+  100% {
+    transform: translate(-10%, 10%) scale(1);
+  }
+}
+
+@keyframes glow4 {
+  0% {
+    transform: translate(10%, -10%) scale(1);
+  }
+  25% {
+    transform: translate(10%, 10%) scale(1);
+  }
+  50% {
+    transform: translate(-10%, 10%) scale(1);
+  }
+  75% {
+    transform: translate(-10%, -10%) scale(1);
+  }
+  100% {
+    transform: translate(10%, -10%) scale(1);
+  }
+
+}
+
+@layer components{
+  .grid {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+      linear-gradient(to bottom, #80808012 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .chatbot-background {
+    background-image: url('C:\Users\prath\OneDrive\Coding\Wartex\Chatbot-Competition\Gemini_Custom_Chatbot_Final_Frontend-Backend\client\src\bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Ensures it covers the entire area */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(8px); /* Adjust blur intensity */
+    z-index: -1;
+     /* Send it behind other elements */
+  }
+  
+  .chatbot-container {
+    position: relative; /* Positioning context for child elements */
+    overflow: hidden; /* Prevent overflow of child elements */
+  }
+}
+
+@keyframes fallingLeft {
+  0% {
+    transform: translateY(-100vh) translateX(-5vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-5vw);
+  }
+}
+
+@keyframes fallingRight {
+  0% {
+    transform: translateY(-100vh) translateX(5vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(5vw);
+  }
+}
+
+.animate-fallingLeft {
+  animation: fallingLeft linear infinite;
+}
+
+.animate-fallingRight {
+  animation: fallingRight linear infinite;
+}
+
+.animate-fallingRight {
+  animation-name: fallingRight;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.animated-background {
+  background-size: 400%;
+
+  -webkit-animation: animation 3s ease infinite;
+  -moz-animation: animation 3s ease infinite;
+  animation: animation 3s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+      background-position: 0% 50%;
+  }
+  
+  50% {
+      background-position: 100% 50%;
+  }
+}
