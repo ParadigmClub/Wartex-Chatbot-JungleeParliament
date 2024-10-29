@@ -90,3 +90,35 @@ To run this project, you will need to add the following environment variables to
 
 15. **Copy the URL** seen on **step 9** and paste in the **.env** file under `FIREBASE_DATABASE_URL`
 
+
+## Installation (For Backend)
+
+* To use the project, first of all run `git clone [project_url]`
+
+```bash
+  git clone [project_url]
+  cd [project]/server
+```
+
+* Now install the required libraries by running 
+
+```bash 
+    pip install -r requirements.txt
+```
+**It is recommended to setup an enviorment to ensure there are no version overlapping for the libraries**
+    
+## Installation (For Frontend)
+
+* After running `git clone [project_url]`, go into the `[project]/client`
+
+```bash
+  cd [project]/client
+```
+
+* Now install **TailwindCSS** and boxicons by running the following command 
+
+```bash 
+    npm install -D tailwindcss postcss autoprefixer
+    npm install boxicons
+```
+
