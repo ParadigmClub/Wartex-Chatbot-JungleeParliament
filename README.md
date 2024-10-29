@@ -147,4 +147,11 @@ To run this project, you will need to add the following environment variables to
     npm install boxicons
 ```
 
+## Run the program (Backend)
+1. go to **../server**
+2. run ```bash python app.py```
+
+## Run the program (Frontend)
+1. go to **../client**
+2. run ```bash npm run dev```
     
