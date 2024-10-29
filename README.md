@@ -90,6 +90,31 @@ To run this project, you will need to add the following environment variables to
 
 15. **Copy the URL** seen on **step 9** and paste in the **.env** file under `FIREBASE_DATABASE_URL`
 
+## Set Up Gemini API
+1. Visit **ai.google.dev** amd click on **Get API Key in Google AI Studio**
+
+   ![1](https://github.com/user-attachments/assets/558c7917-9552-41c8-875e-90814bfe1660)
+
+2. Select **Develop in your own enviorment**
+
+   ![2](https://github.com/user-attachments/assets/38358ea7-42d2-454e-b87c-d2479b0f2c13)
+
+3. Agree to the Legal Garbage (They will definitely not steal ur personal info) and click **Continue**
+   
+   ![3](https://github.com/user-attachments/assets/7773a9f7-46c7-4c94-83d4-8b893963228c)
+
+4. Click on **Create API key** option
+
+   ![4](https://github.com/user-attachments/assets/82c6e97e-d472-4d98-aa02-6d50b4cbe1c2)
+
+5. Select the project we just created in Firebase here (Check out [How to set up Firebase](#how-to-set-up-firebase))
+
+   ![5](https://github.com/user-attachments/assets/65b7cd32-9759-488e-8bd9-f25d3b4c6d09)
+
+6. Copy the API key and paste it in the `GOOGLE_API_KEY` value of **.env** in **./server**
+
+   ![6](https://github.com/user-attachments/assets/66567b59-a954-4beb-bbe8-2d466ff2714e)
+
 
 ## Installation (For Backend)
 
@@ -122,3 +147,4 @@ To run this project, you will need to add the following environment variables to
     npm install boxicons
 ```
 
+    
