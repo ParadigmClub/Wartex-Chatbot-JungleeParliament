@@ -17,7 +17,7 @@ Thumbs.db
 
 # IDE/Editor-specific files
 .vscode/
-.idea/
+../.idea/
 *.swp
 
 # Build and dependency directories
