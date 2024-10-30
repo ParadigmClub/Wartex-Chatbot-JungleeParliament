@@ -1,8 +1,5 @@
 # Custom Chatbot (Junglee Parliament) - Prathamesh Prabhakar
-
-
-
-
+![Untitled design](https://github.com/user-attachments/assets/03601598-9ed8-4e87-8a5a-b8db676717c1)
 ## Overview
 
 This is a custom chatbot application built with **React + Python** featuring a unique UI with Preset Prompts, Formatted responses with **Bullet Points** and **Bold Styling**.
@@ -42,7 +39,8 @@ To run this project, you will need to add the following environment variables to
    
    ![14](https://github.com/user-attachments/assets/6eb60e5f-de62-4ace-9664-6f0d0d914e85)
 
-3. **Name the project ==> Accept the terms ==> Click Continue**
+3. **Name the project ==> Accept the terms ==> Click Continue**![Untitled design](https://github.com/user-attachments/assets/306ca5c7-0af1-4620-a558-d43d6fde0e2f)
+
 
    ![2](https://github.com/user-attachments/assets/56820520-fd77-4de0-bd13-e6b32525297f)
 
