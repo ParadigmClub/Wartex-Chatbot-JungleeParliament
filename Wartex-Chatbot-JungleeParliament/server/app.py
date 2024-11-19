@@ -3,6 +3,7 @@ from chatbot import ChatBot  # Importing the ChatBot class from chatbot.py
 import os  # Importing the os module to access environment variables
 from dotenv import load_dotenv  # Importing the load_dotenv function to load environment variables from .env file
 from datetime import datetime, timedelta  # Importing the datetime and timedelta classes from the datetime module
+import traceback  # Importing the traceback module to log error stack traces
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='client/dist', static_url_path='')
@@ -13,6 +14,9 @@ load_dotenv()
 # Initialize ChatBot
 api_key = os.getenv('GOOGLE_API_KEY')
 chatbot = ChatBot(api_key=api_key)
+
+# In-memory storage for chat history
+chat_history = []
 
 
 # Helper function to get current time
@@ -33,24 +37,24 @@ def send_message():
 
     if user_input.lower() == 'exit':
         return jsonify({"response": "Goodbye!"}), 200
+    elif user_input == 'history':
+        return jsonify({"response": chat_history}), 200
 
     try:
         response = chatbot.send_prompt(user_input)
         time = get_time()
-        # Instead of saving chat history to Firebase, you can store it in memory or a file if needed
-        chatHistory = dict(prompt=user_input, response=response)
-        # You can log chat history or store it elsewhere if needed
-        print(f"Chat History: {chatHistory}")  # Logging to console for now
+        chat_entry = {"time": time.isoformat(), "prompt": user_input, "response": response}
+        chat_history.append(chat_entry)
         return jsonify({"response": response})
     except Exception as e:
+        # Log the full error stack trace for debugging
+        print("Error Traceback:", traceback.format_exc())
         return jsonify({"error": str(e)}), 500  # Convert exception to string
 
 
-# API endpoint to get chat history (this is no longer fetching from Firebase, so you may want to store in memory)
+# API endpoint to get chat history
 @app.route('/api/chat_history', methods=['GET'])
 def get_chat_history():
-    # If you want to return stored chat history, you would need to store it in a variable (e.g., a list)
-    chat_history = []  # This would be where you store history
     return jsonify(chat_history)
 
 
@@ -64,6 +68,8 @@ def serve(path):
     if path != "" and os.path.exists(static_file):
         return send_from_directory(app.static_folder, path)
     else:
+        # Log what is being served to aid debugging
+        print(f"Serving index.html for path: {path}")
         return send_from_directory(app.static_folder, 'index.html')
 
 
