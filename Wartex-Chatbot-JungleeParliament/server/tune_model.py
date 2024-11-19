@@ -14,71 +14,60 @@ base_model = "models/gemini-1.5-flash-001-tuning"
 
 
 training_data = [
-    {
-      "text_input": "Who is President",
-      "output": "President is Elephant 🐘, who symbolizes strength, stability, and wisdom, key traits in its role as the head of state"
-    },
-    {
-      "text_input": "Who is vice-President",
-      "output": "Vice-President is the wise Owl 🦉, who has the ability to maintain balance and stay vigilant. The main role of the vice president is to be in equilibrium and be alert."
-    },
-    {
-      "text_input": "Who is Prime-Minister",
-      "output": "Prime Minister is the Lion 🦁, depicting the power and courage, who represents strength, leadership, and courage, attributes that resonate with the prime minister’s image both domestically and globally."
-    },
-    {
-      "text_input":"Who is Ministry of Defense",
-      "output": "President is the Tiger 🐅, which is fiercely protective, embodiing the qualities of strength, guardianship and vigilant in safeguarding its members' security "
-    },
-    {
-      "text_input": "Who is Ministry of Home Affairs & Ministry of Cooperation ",
-      "output": "Ministry of Home Affairs & Ministry of Cooperation  is the WOrld 🐺, who is a strategist is the perfect fit for this post. He is able to manage internal secutrity and cooperation. it is the nature of the wolf to reflect pack loyalty and territorial vigilance. "
-    },
-    {
-      "text_input": "Who is Ministry of Finance & Ministry of Corporate Affairs ",
-      "output": "Ministry of Finance & Ministry of Corporate Affairs is Ant 🐜, who are industroius, resourceful, and organised, which are important abilities of finance minister"
-    },
-    {
-      "text_input": "Who is Ministry of External Affairs ",
-      "output": "Ministry of External Affairs is the Eagle 🦅, which jas far-sighted vision and high-flying perspective, aptly represents his role in overseeing India’s foreign relations"
-    },
-    {
-      "text_input": "Who is Ministry of Road Transport and Highways ",
-      "output": "Ministry of Road Transport and Highways is Beaver, who is best known for constructing infrastructure. The industrious beaver reflects his dedication to building India’s transport networks"
-    },
-    {
-      "text_input": "Who is Ministry of Women and Child Development ",
-      "output": "Ministry of Women and Child Development is the Kangaro 🦘, known for nurturing its young and carrying them safely, represents her role in women and child welfare"
-    },
-    {
-      "text_input": "Who is Ministry of Environment, Forest and Climate Change ",
-      "output": "Ministry of Environment, Forest and Climate Change is the Panda 🐼, which symbolise peace, conservation, and commitment to environmental issues."
-    },
-    {
-      "text_input": "Who is Ministry of Communications ",
-      "output": "Ministry of Communications is Parrot 🦜, who is a symbol of effective communication. They are known for their clarity and vibrance in their voice, giving him the role of improving communication."
-    },
-    {
-      "text_input": "Who is Ministry of Textiles ",
-      "output": "Ministry of Textiles is the Spider 🕷, who are weavers, much like his role in textiles, connecting various industries and stakeholders"
-    },
-    {
-      "text_input": "Who is Ministry of Railways & Ministry of Electronics ",
-      "output": "Ministry of Railways & Ministry of Electronics is the Falcon 𓅃, which symbolizes strength, stability, and wisdom, key traits in its role as the head of state"
-    },
-    {
-      "text_input": "Who is Ministry of Railways & Ministry of Electronics ",
-      "output": "Ministry of Railways & Ministry of Electronics is the Falcon 𓅃, which symbolizes strength, stability, and wisdom, key traits in its role as the head of state"
-    },
-    {
-      "text_input": "Who is Ministry of Railways & Ministry of Electronics ",
-      "output": "Ministry of Railways & Ministry of Electronics is the Falcon 𓅃, which symbolizes strength, stability, and wisdom, key traits in its role as the head of state"
-    },
-    {
-      "text_input": "Who is Ministry of Railways & Ministry of Electronics ",
-      "output": "Ministry of Railways & Ministry of Electronics is the Falcon 𓅃, which symbolizes strength, stability, and wisdom, key traits in its role as the head of state"
-    }
-]
+        {
+            "text_input": "Who is President",
+            "output": "The President is represented by the Elephant 🐘, a figure known for its immense strength, stability, and wisdom. The elephant’s dignified presence and calm demeanor make it an ideal symbol for leadership. As the head of state, the elephant’s qualities resonate with authority and guidance."
+        },
+        {
+            "text_input": "Who is Vice-President",
+            "output": "The Vice-President is symbolized by the Owl 🦉, renowned for its wisdom and vigilant nature. With keen observation and the ability to remain calm under pressure, the owl ensures balance and foresight in governance, supporting the President and taking on responsibilities as required."
+        },
+        {
+            "text_input": "Who is Prime Minister",
+            "output": "The Prime Minister is depicted as the Lion 🦁, a symbol of courage, leadership, and strength. Known as the king of the jungle, the lion’s role emphasizes decisiveness and authority both domestically and on the international stage, representing the face of the nation's strength and resilience."
+        },
+        {
+            "text_input": "Who is Minister of Defense",
+            "output": "The Minister of Defense is represented by the Tiger 🐅, embodying a fierce protectiveness and a vigilant stance. Known for its agility and power, the tiger is well-suited to guard and defend, symbolizing the ministry’s responsibility to safeguard the nation's security and maintain a robust defense."
+        },
+        {
+            "text_input": "Who is Minister of Home Affairs & Minister of Cooperation",
+            "output": "The Minister of Home Affairs & Cooperation is symbolized by the Wolf 🐺, an animal known for its loyalty to the pack and sharp instincts. As a strategist and guardian, the wolf manages internal security and fosters unity, ensuring stability and cooperation within the nation’s boundaries."
+        },
+        {
+            "text_input": "Who is Minister of Finance & Minister of Corporate Affairs",
+            "output": "The Minister of Finance & Corporate Affairs is represented by the Ant 🐜, a creature known for its industrious and organized nature. Ants are resourceful and work in unity, much like the finance minister's role in building a strong economy and managing resources efficiently for sustainable growth."
+        },
+        {
+            "text_input": "Who is Minister of External Affairs",
+            "output": "The Minister of External Affairs is represented by the Eagle 🦅, symbolizing keen vision and high-flying perspectives. With an ability to observe from a distance, the eagle aptly represents diplomacy, ensuring far-sighted and strategic relations with other countries, protecting national interests on the global stage."
+        },
+        {
+            "text_input": "Who is Minister of Road Transport and Highways",
+            "output": "The Minister of Road Transport and Highways is symbolized by the Beaver 🦫, an animal known for its skill in construction and infrastructure. The beaver’s dedication to building reflects the ministry’s role in developing and maintaining roads and highways crucial to connectivity and growth."
+        },
+        {
+            "text_input": "Who is Minister of Women and Child Development",
+            "output": "The Minister of Women and Child Development is represented by the Kangaroo 🦘, an animal that cares for and nurtures its young. The kangaroo’s instinct to protect and support aligns with the ministry’s focus on welfare, safety, and development programs for women and children."
+        },
+        {
+            "text_input": "Who is Minister of Environment, Forest and Climate Change",
+            "output": "The Minister of Environment, Forest, and Climate Change is symbolized by the Panda 🐼, a creature associated with peace, conservation, and gentle strength. The panda reflects the ministry’s commitment to environmental protection, sustainable practices, and conservation efforts for a greener future."
+        },
+        {
+            "text_input": "Who is Minister of Communications",
+            "output": "The Minister of Communications is represented by the Parrot 🦜, known for its articulate and vibrant communication. Parrots are highly social and expressive, symbolizing the ministry’s goal to enhance connectivity and clear communication across the country."
+        },
+        {
+            "text_input": "Who is Minister of Textiles",
+            "output": "The Minister of Textiles is symbolized by the Spider 🕷, a natural weaver that connects various elements into a cohesive web. Like the spider’s craft, this ministry’s role involves fostering the textile industry, weaving together different sectors for a flourishing economy."
+        },
+        {
+            "text_input": "Who is Minister of Railways & Minister of Electronics",
+            "output": "The Minister of Railways & Electronics is represented by the Falcon 🦅, an animal associated with precision, speed, and a strategic approach. The falcon’s agility mirrors the ministry’s responsibility for efficient transportation networks and advancements in electronics, keeping the nation connected and technologically competitive."
+        }
+    ]
+
 
 
 operation = genai.create_tuned_model(

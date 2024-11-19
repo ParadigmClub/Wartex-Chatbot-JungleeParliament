@@ -1,14 +1,13 @@
-from flask import Flask, request, jsonify, send_from_directory
-import sys
-from chatbot import ChatBot
-import os
-from dotenv import load_dotenv
-import google.generativeai as genai
-import firebase_admin
-from firebase_admin import db, credentials
-from datetime import datetime, timedelta
-import traceback
+from flask import Flask, request, jsonify, send_from_directory # Importing necessary libraries
+from chatbot import ChatBot # Importing the ChatBot class from chatbot.py
+import os # Importing the os module to access environment variables
+from dotenv import load_dotenv  # Importing the load_dotenv function to load environment variables from .env file
+import firebase_admin   # Importing the firebase_admin module to interact with Firebase
+from firebase_admin import db, credentials  # Importing the db and credentials modules from firebase_admin
+from datetime import datetime, timedelta    # Importing the datetime and timedelta classes from the datetime module
+import traceback    # Importing the traceback module to log error stack traces
 
+# Initialize Flask app
 app = Flask(__name__, static_folder='client/dist', static_url_path='')
 
 # Load environment variables
