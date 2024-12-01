@@ -1,4 +1,5 @@
 # Custom Chatbot (Junglee Parliament) - Prathamesh Prabhakar
+**Note: The chatbot feature is not functional on the live URL; it will only display the UI. To experience the full functionality, please follow the steps outlined below.**
 ![Untitled design](https://github.com/user-attachments/assets/03601598-9ed8-4e87-8a5a-b8db676717c1)
 ## Overview
 
